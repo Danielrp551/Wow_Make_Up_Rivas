@@ -1,0 +1,29 @@
+
+
+/* Inicio = index */
+
+.bg-light {
+    background-color: black !important;
+}
+
+.navbar-toggler-icon {
+    width: 33px;
+    height: 33px;
+    background-color: #CA054D;
+    border: 1px solid #CA054D;
+    border-radius: 5px;
+}
+
+.nav-link.active {
+    color: white !important;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+/* Animacion */
+.nav-link.active:hover {
+    color: #CA054D !important;
+}
+
+.logo_header{
+    height: 9vh;
+}
