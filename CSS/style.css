@@ -76,8 +76,9 @@
 .dato {
     margin: 10px 0px 10px 0px;
 }
+
 /* Animacion */
-.dato:hover{
+.dato:hover {
     box-shadow: 11px 15px 5px 0px rgb(0 0 0 / 16%);
 }
 
@@ -97,7 +98,8 @@
     border-radius: 10px;
     padding: 5px;
 }
-.link_quienes_somos:hover{
+
+.link_quienes_somos:hover {
     color: black;
     transform: scale(1.1);
     transition: 0.3s;
@@ -107,7 +109,8 @@
 .bloque_quienes_somos img {
     padding: 0px;
 }
-.bloque_quienes_somos img:hover{
+
+.bloque_quienes_somos img:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
@@ -119,7 +122,6 @@
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(to bottom, #CA054D, #ff006c);
-    border: 1px linear-gradient(to bottom, #CA054D, #ff006c) solid;
     border-radius: 10px;
 }
 
@@ -138,17 +140,19 @@
     background-color: #CA054D;
     border-color: #CA054D;
 }
+
 /* Animacion */
-.link_producto:hover    {
+.link_producto:hover {
     border-color: #CA054D;
     background-color: #CA054D;
     color: black;
     transform: scale(1.1);
     transition: 0.3s;
 }
+
 /* Animacion */
-.card_producto:hover{
-    box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39); 
+.card_producto:hover {
+    box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
 /* Footer */
@@ -175,7 +179,8 @@
     justify-content: center;
     list-style: none;
 }
-.footer ul li{
+
+.footer ul li {
     margin: 0px 10px;
 }
 
@@ -192,6 +197,7 @@
     padding: 5px;
 
 }
+
 /* Animacion */
 .link_volver_arriba:hover {
     border-color: #CA054D;
@@ -264,7 +270,7 @@
     .bloque_quienes_somos .card {
         margin: 10px;
         width: 40%;
-        height: 32vh;
+        height: 43vh;
     }
 
     .bloque_quienes_somos .card .card-body {
@@ -287,24 +293,143 @@
     .bloque_quienes_somos img {
         margin: 10px;
         width: 50%;
-        height: 32vh;
+        height: 43vh;
     }
 
     /* Bloque productos */
-    .cards_productos{
+    .cards_productos {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .cards_productos div{
+
+    .cards_productos div {
         margin: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
     }
-    .cards_productos img{
+
+    .cards_productos img {
         height: 30vh;
     }
 }
+
+/* NOSOTROS */
+
+.bloque_1_nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom, #CA054D, #ff006c);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.bloque_2_nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom, #CA054D, #ff006c);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.nosotros_card {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nosotros_card:hover{
+    box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
+}
+
+.nosotros_card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagen_nosotros {
+    padding: 0px;
+}
+.imagen_nosotros:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+} 
+
+/* Bloque Fundadoras */
+
+.bloque_fundadoras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_fundadoras {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8vh;
+}
+
+.fundadora {
+    margin-top: 10px;
+}
+.fundadora:hover{
+    box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos medianos (desktop) */
+@media(min-width: 768px) {
+    /* NOSOTROS */
+
+    .bloque_1_nosotros {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .bloque_2_nosotros {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .nosotros_card {
+        margin: 10px;
+        width: 40%;
+        height: 45vh;
+    }
+
+    .imagen_nosotros {
+        width: 50%;
+        height: 45vh;
+        margin: 10px;
+    }
+
+    /* Bloque Fundadoras */
+
+    .cards_fundadoras{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        justify-content: space-between;
+    }
+
+    .fundadora {
+        width: 40%;
+    }
+}
+
+/* Productos */

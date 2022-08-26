@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Mi estilo -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../imagenes/logo_empresa.png">
+    <title>Wow Make Up</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo_header" src="../imagenes/logo_empresa.png" alt="logo de wow make up">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./productos.html">Cremas</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Jabones</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Shampos y
+                                        acondicionadores</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Herramientas de
+                                        maquillaje</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <div class="bloque_1_nosotros container">
+            <div class="card container nosotros_card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Historia</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content</p>
+                </div>
+            </div>
+            <img class="container imagen_nosotros" src="../imagenes/Tienda.jpg" alt="foto de una tienda de maquillaje">
+        </div>
+        <div class="bloque_2_nosotros container">
+            <div class="card container nosotros_card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Nuestros Clientes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content</p>
+                </div>
+            </div>
+            <img class="container imagen_nosotros" src="../imagenes/quienes_somos_1.jpg"
+                alt="foto de una tienda de maquillaje">
+        </div>
+        <br>
+        <div class="bloque_fundadoras container">
+            <h5 class="titulo_fundadoras">Fundadoras</h5>
+            <div class="cards_fundadoras">
+                <div class="card fundadora">
+                    <img src="../imagenes/Fundadora_1.jpg" class="card-img-top"
+                        alt="foto de una de las cofundadoras de wow make up">
+                    <div class="card-body text-center">
+                        <h5>Alexandra Ortiz</h5>
+                        <p class="card-text text-muted">Cofundadora de Wow Make Up</p>
+                    </div>
+                </div>
+                <div class="card fundadora">
+                    <img src="../imagenes/fundadora_2.jpg" class="card-img-top"
+                        alt="foto de otra de las fundadoras de wow make up">
+                    <div class="card-body text-center">
+                        <h5>Marlene Velezmoro</h5>
+                        <p class="card-text text-muted">Cofundadora de Wow Make Up</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+    <footer class="footer">
+        <img class="logo_footer" src="../imagenes/logo_empresa.png" alt="logo de Wow Make Up">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/Wow-Make-up-101217409351477" target="_blank">
+                    <img class="logo_red_social" src="../imagenes/facebook_logo.png" alt="logo de facebook">
+                </a>
+            </li>
+            <li>
+                <a class="link_volver_arriba" href="">
+                    Volver Arriba
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/makeupkiss3/" target="_blank">
+                    <img class="logo_red_social" src="../imagenes/instagram_logo.png" alt="logo de instagram">
+                </a>
+            </li>
+        </ul>
+        <p>@Wow Make Up 2022</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
