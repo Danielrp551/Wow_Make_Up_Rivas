@@ -439,6 +439,25 @@
         width: 40%;
     }
 }
+/* Dispositivos medianos (desktop) */
+@media(min-width: 1024px){
+    .bloque_1_nosotros {
+        justify-content: space-around;
+    }
+
+    .bloque_2_nosotros {
+        justify-content: space-around;
+    }
+    .nosotros_card {
+        width: 35%;
+        height: 30vh;
+    }
+
+    .imagen_nosotros {
+        width: 45%;
+        height: 30vh;
+    }
+}
 
 /* Productos */
 .contenedor_productos {
@@ -567,6 +586,13 @@
 
     .product_card {
         width: 15rem;
+        height: 28rem;
+    }
+    .product_card div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
 }
@@ -582,7 +608,7 @@
     align-items: center;
 }
 
-h2 {
+.titulo_marcas {
     text-decoration: underline;
     font-size: 8vh;
     text-align: center;
@@ -633,7 +659,7 @@ h2 {
         justify-content: space-around;
     }
 
-    h2 {
+    .titulo_marcas {
         font-size: 6vh;
     }
 
@@ -644,5 +670,95 @@ h2 {
 
     .bloque_reseñas iframe {
         width: 40%;
+    }
+}
+
+/* Contacto */
+
+.bloque_0_formulario{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bloque_0_formulario h3{
+    text-decoration: underline;
+    font-size: 7vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bloque_1_formulario {
+    text-align: center;
+    border: 1px #22a884 solid;
+    border-radius: 10px;
+    width: 90%;
+    padding: 2%;
+}
+
+.boton {
+    border: 1px #22a884 solid;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, #35ca74, #22a884);
+    border-radius: 5px;
+    color: white;
+}
+/* Animacion */
+.boton:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.caja_texto {
+    width: 80%;
+    height: 30px;
+    margin: 5px;
+}
+/* Animacion */
+.caja_texto:focus{
+    border-radius: 5px;
+    background-color: #16db9342;
+    border: none;
+}
+.mensaje {
+    height: 15vh;
+}
+/* Ubicacion */
+.bloque_0_ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bloque_0_ubicacion h3{
+    text-decoration: underline;
+    font-size: 7vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bloque_1_ubicacion {
+    background-image: linear-gradient(to bottom, #0a919e, #0045ff);
+    border-radius: 10px;
+    padding: 3% 0px;
+    text-align: center;
+}
+
+.bloque_1_ubicacion iframe{
+    width: 95%;
+    height: 50vh;
+    border-radius: 12px;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos medianos (desktop) */
+@media(min-width: 768px){
+    .bloque_1_formulario{
+        width: 75%;
+    }
+    .bloque_1_ubicacion {
+        width: 75%;
+    }
+    .bloque_1_ubicacion iframe{
+        width: 85%;
+        height: 50vh;
+        border-radius: 12px;
     }
 }
