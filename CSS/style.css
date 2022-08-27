@@ -149,6 +149,10 @@
     transform: scale(1.1);
     transition: 0.3s;
 }
+.link_producto:focus{
+    border-color: #CA054D;
+    background-color: #CA054D;
+}
 
 /* Animacion */
 .card_producto:hover {
@@ -349,7 +353,8 @@
     flex-direction: column;
     justify-content: space-around;
 }
-.nosotros_card:hover{
+
+.nosotros_card:hover {
     box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
@@ -363,10 +368,11 @@
 .imagen_nosotros {
     padding: 0px;
 }
-.imagen_nosotros:hover{
+
+.imagen_nosotros:hover {
     transform: scale(1.05);
     transition: 0.3s;
-} 
+}
 
 /* Bloque Fundadoras */
 
@@ -384,7 +390,8 @@
 .fundadora {
     margin-top: 10px;
 }
-.fundadora:hover{
+
+.fundadora:hover {
     box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
@@ -420,7 +427,7 @@
 
     /* Bloque Fundadoras */
 
-    .cards_fundadoras{
+    .cards_fundadoras {
         display: flex;
         flex-direction: row;
         margin: 10px;
@@ -433,3 +440,131 @@
 }
 
 /* Productos */
+.contenedor_productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtro_producto {
+    padding: 2%;
+    width: 80%;
+    text-align: center;
+    border: 1px whitesmoke solid;
+    border-radius: 12px;
+    background-color: whitesmoke;
+}
+
+.titulo_filtro {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vh;
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filtro button {
+    background-color: #CA054D;
+    border: 1px #CA054D solid;
+    color: white;
+    --bs-btn-active-color:
+}
+
+.filtro button:hover {
+    background-color: #CA054D;
+    border: 1px #CA054D solid;
+}
+
+.filtro button:focus {
+    background-color: #CA054D;
+    border: 1px #CA054D solid;
+}
+
+.barra_filtro {
+    display: none;
+}
+
+.productos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product_card {
+    width: 70%;
+    margin: 10px;
+}
+
+.product_card:hover {
+    box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos medianos (desktop) */
+@media(min-width: 768px) {
+
+    /* Productos */
+    .contenedor_productos {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .filtro_producto {
+        display: none;
+    }
+
+    .barra_filtro {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px 0px 1rem  ;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        width: 21rem;
+        height:  100%;
+        padding: 2%;
+    }
+    .barra_filtro h5{
+        font-size: 150%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #CA054D;
+    }
+    .barra_filtro ul{
+        list-style: none;
+        margin: 10px 0px 5px 0px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .barra_filtro li{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .barra_filtro a{
+        text-decoration: none;
+        color: rgb(51, 49, 49);
+    }
+
+    .productos {
+        margin-top: 0px;
+        width: 60%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .product_card {
+        width: 15rem;
+    }
+
+}
+
+
+/* Marcas */
