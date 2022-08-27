@@ -149,7 +149,8 @@
     transform: scale(1.1);
     transition: 0.3s;
 }
-.link_producto:focus{
+
+.link_producto:focus {
     border-color: #CA054D;
     background-color: #CA054D;
 }
@@ -521,19 +522,21 @@
     .barra_filtro {
         display: flex;
         flex-direction: column;
-        margin: 10px 0px 0px 1rem  ;
+        margin: 10px 0px 0px 1rem;
         background-color: whitesmoke;
         border-radius: 10px;
         width: 21rem;
-        height:  100%;
+        height: 100%;
         padding: 2%;
     }
-    .barra_filtro h5{
+
+    .barra_filtro h5 {
         font-size: 150%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #CA054D;
     }
-    .barra_filtro ul{
+
+    .barra_filtro ul {
         list-style: none;
         margin: 10px 0px 5px 0px;
         padding: 0;
@@ -542,11 +545,13 @@
         justify-content: space-between;
         align-items: flex-start;
     }
-    .barra_filtro li{
+
+    .barra_filtro li {
         margin-top: 2%;
         margin-bottom: 2%;
     }
-    .barra_filtro a{
+
+    .barra_filtro a {
         text-decoration: none;
         color: rgb(51, 49, 49);
     }
@@ -566,5 +571,78 @@
 
 }
 
-
 /* Marcas */
+.bloque_marcas {
+    background-image: linear-gradient(to bottom, #35ca74, #22a884);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 8vh;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bloque_marcas img {
+    width: 85%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bloque_marcas img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
+
+}
+
+.bloque_reseñas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bloque_reseñas iframe {
+    width: 90%;
+    height: 40vh;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos medianos (desktop) */
+@media(min-width: 768px) {
+
+    /* Marcas */
+    .bloque_marcas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    h2 {
+        font-size: 6vh;
+    }
+
+    .bloque_marcas img {
+        width: 35%;
+        height: 40vh;
+    }
+
+    .bloque_reseñas iframe {
+        width: 40%;
+    }
+}
