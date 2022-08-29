@@ -36,12 +36,6 @@
     flex-direction: column;
 }
 
-.bloque_cuidado_piel img {
-    margin: 0px 0px 10px 0px;
-    padding: 0px;
-}
-
-
 .texto_bloque_cuidado_piel {
     border: 1px #d4c9cd solid;
     border-radius: 12px;
@@ -489,7 +483,6 @@
     background-color: #CA054D;
     border: 1px #CA054D solid;
     color: white;
-    --bs-btn-active-color:
 }
 
 .filtro button:hover {
